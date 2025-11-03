@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter , BrowserRouter, Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Home from './templates/home'
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -38,7 +38,7 @@ function App() {
         </Routes>
         <Footer />
         <ToastContainer />
-      </BrowserRouter>
+      </HashRouter>
 
     </>
   )
