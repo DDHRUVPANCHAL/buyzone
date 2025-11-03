@@ -37,7 +37,7 @@ function Header() {
             <Navbar expand="lg" className="" style={{ backgroundColor: "var(--primary)" }}>
                 <Container fluid>
                     <img width={"50px"} className='me-3' src="https://cdn-icons-png.flaticon.com/512/3225/3225194.png" alt="" />
-                    <Navbar.Brand href="/">BuyZone</Navbar.Brand>
+                    <Navbar.Brand to="/">BuyZone</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -45,17 +45,17 @@ function Header() {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="/products">Products</Nav.Link>
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/cart">Cart</Nav.Link>
-                            <Nav.Link href="/orders">Orders</Nav.Link>
+                            <Nav.Link to="/products">Products</Nav.Link>
+                            <Nav.Link to="/">Home</Nav.Link>
+                            <Nav.Link to="/cart">Cart</Nav.Link>
+                            <Nav.Link to="/orders">Orders</Nav.Link>
                             <NavDropdown title="More" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
-                                <NavDropdown.Item href="/about">
+                                <NavDropdown.Item to="/contact">Contact</NavDropdown.Item>
+                                <NavDropdown.Item to="/about">
                                     About Us
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/location">
+                                <NavDropdown.Item to="/location">
                                     Where we are!
                                 </NavDropdown.Item>
                             </NavDropdown>
